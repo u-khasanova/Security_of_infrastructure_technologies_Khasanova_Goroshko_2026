@@ -1,0 +1,69 @@
+You are a machine learning and Python expert. Your task is to write a complete application for analyzing the InSDN (SDN Intrusion Dataset) in CSV format. The dataset contains three files: Normal_data.csv, OVS.csv, and Metasploitable-2.csv. Each file contains over 80 numerical features (obtained by CICFlowMeter) and a class label (type or label: normal or detection type). Requirements:
+
+
+1. Loading and merging data:
+- Load all three CSV files from the specified folder.
+- Define the target variable: for OVS.csv and Metasploitable-2.csv, the 'type' column contains attack categories (DoS, DDoS, Probe, brute-force attack, Web attack, Botnet, Exploitation). For Normal_data.csv, all entries refer to normal traffic.
+- Create a single DataFrame with the following columns: all features (numeric) + the "label" label (0 - normal, 1 - attack) and "attack_type" (definition type, "benign" for normal features).
+
+
+- Perform preprocessing: handle missing features (replace with 0 or median), remove constant features, and scale (StandardScaler) if necessary.
+
+
+2. Data Splitting:
+- Stratified split into training (60%), validation (20%), and testing (20%), specifying the "attack_type" label (so that all attack types are included in each sample).
+
+
+3. Training built-in models (binary classification normal/attack):
+- Train at least three models: LogisticRegression, RandomForestClassifier, GradientBoostingClassifier (or XGBoost, if installed).
+
+
+- For each model, hyperparameters are selected using GridSearchCV (limited search) on the validation set.
+
+
+- Evaluate the test set: accuracy, precision, recall, f1-score, ROC-AUC, confusion matrix (in video graphics and text).
+
+
+4. Multi-class classification (action type):
+- Train a RandomForestClassifier (or any other) to predict the type of response (only on attack samples, or on all attack samples).
+
+
+- Metrics: classification_report (accuracy, recall, f1-score per class), confusion matrix.
+
+
+5. Saving results in a readable format:
+- Save the predictions of all models on the test set in a CSV file: 'predictions.csv' with columns: actual label (binary, multi-class), predictions of each model.
+- Save metrics (binary and multiclass) in the JSON file "metrics.json".
+
+
+- Save trained models (using joblib or Pickle).
+
+
+6. Application structure:
+- Write it as a script with the following functions: load_data(), preprocess(), train_binary_models(), train_multiclass_model(), evaluation(), save_results().
+
+
+- At the end of the file, __main__ should run the entire pipeline, processing the command line arguments: --data_dir (path to the CSV).
+
+
+- Add detailed comments and docstrings.
+
+
+- Use libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, joblib, json, argparse.
+
+
+7. Reproducibility:
+- Fix random_state=42 wherever randomness occurs.
+
+
+8. Additional suggestions:
+- Print a summary of the class distribution. - Visualize the confusion matrix for the best binary and multiclass model.
+- If a CSV is missing, throw a clear error (check for foreign input data).
+
+
+Write the complete code, which can be saved
+in the file Analysis_insdn.py, and run it. Keep in mind that the dataset can be large (hundreds of thousands of rows), so detection methods are used (for example, a sample is not needed for debugging; we work with all the data).
+Make sure the code handles the case where a rare instrument type is missing during testing—GridSearchCV should use stratification.
+
+
+Only provide the code without unnecessary explanations (or with excellent comments within the code).
