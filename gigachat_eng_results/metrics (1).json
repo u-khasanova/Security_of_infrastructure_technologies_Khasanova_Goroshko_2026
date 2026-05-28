@@ -1,0 +1,163 @@
+{
+    "binary": {
+        "LogisticRegression": {
+            "accuracy": 0.9965395911483323,
+            "precision": 0.9961469582677592,
+            "recall": 0.9995462218430654,
+            "f1": 0.9978436950731151,
+            "roc_auc": 0.9991362889021592
+        },
+        "RandomForest": {
+            "accuracy": 0.9998982232690686,
+            "precision": 0.9999092493102948,
+            "recall": 0.9999636977474452,
+            "f1": 0.9999364727876648,
+            "roc_auc": 0.9999997479931318
+        },
+        "XGBoost": {
+            "accuracy": 0.9998982232690686,
+            "precision": 0.9999455456327597,
+            "recall": 0.9999273954948904,
+            "f1": 0.999936470481463,
+            "roc_auc": 0.9999999297033472
+        },
+        "multiclass": {
+            "BFA": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 0.0
+            },
+            "BOTNET": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 0.0
+            },
+            "DDoS": {
+                "precision": 0.08577405857740586,
+                "recall": 0.3147389969293756,
+                "f1-score": 0.13480929416922402,
+                "support": 5862.0
+            },
+            "DDoS ": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 0.0
+            },
+            "DoS": {
+                "precision": 0.01685320982889489,
+                "recall": 0.11441048034934498,
+                "f1-score": 0.029378784480825298,
+                "support": 1145.0
+            },
+            "Probe": {
+                "precision": 0.8980623420387531,
+                "recall": 0.05178360347814823,
+                "f1-score": 0.09792094062892312,
+                "support": 61757.0
+            },
+            "U2R": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 14.0
+            },
+            "Web-Attack": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 0.0
+            },
+            "benign": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 0.0
+            },
+            "accuracy": 0.07522754369129664,
+            "macro avg": {
+                "precision": 0.1111877344938949,
+                "recall": 0.05343700897298542,
+                "f1-score": 0.029123224364330274,
+                "support": 68778.0
+            },
+            "weighted avg": {
+                "precision": 0.8139774421169869,
+                "recall": 0.07522754369129664,
+                "f1-score": 0.09990395651328828,
+                "support": 68778.0
+            }
+        }
+    },
+    "multiclass": {
+        "BFA": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+        },
+        "BOTNET": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+        },
+        "DDoS": {
+            "precision": 0.08577405857740586,
+            "recall": 0.3147389969293756,
+            "f1-score": 0.13480929416922402,
+            "support": 5862.0
+        },
+        "DDoS ": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+        },
+        "DoS": {
+            "precision": 0.01685320982889489,
+            "recall": 0.11441048034934498,
+            "f1-score": 0.029378784480825298,
+            "support": 1145.0
+        },
+        "Probe": {
+            "precision": 0.8980623420387531,
+            "recall": 0.05178360347814823,
+            "f1-score": 0.09792094062892312,
+            "support": 61757.0
+        },
+        "U2R": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 14.0
+        },
+        "Web-Attack": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+        },
+        "benign": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+        },
+        "accuracy": 0.07522754369129664,
+        "macro avg": {
+            "precision": 0.1111877344938949,
+            "recall": 0.05343700897298542,
+            "f1-score": 0.029123224364330274,
+            "support": 68778.0
+        },
+        "weighted avg": {
+            "precision": 0.8139774421169869,
+            "recall": 0.07522754369129664,
+            "f1-score": 0.09990395651328828,
+            "support": 68778.0
+        }
+    }
+}

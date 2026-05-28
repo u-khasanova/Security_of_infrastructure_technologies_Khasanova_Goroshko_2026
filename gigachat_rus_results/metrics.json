@@ -1,0 +1,102 @@
+{
+    "binary_metrics": {
+        "LogisticRegression": {
+            "accuracy": 0.9968885399400971,
+            "precision": 0.9964538365508132,
+            "recall": 0.999673279727007,
+            "f1": 0.9980609619078685,
+            "roc_auc": 0.9991495404843761,
+            "confusion_matrix": [
+                [
+                    13489,
+                    196
+                ],
+                [
+                    18,
+                    55075
+                ]
+            ],
+            "confusion_matrix_path": "cm_best_binary_LogisticRegression.png"
+        },
+        "RandomForest": {
+            "accuracy": 0.9998982232690686,
+            "precision": 0.99992739681272,
+            "recall": 0.9999455466211679,
+            "f1": 0.9999364716345849,
+            "roc_auc": 0.9999631081840087,
+            "confusion_matrix": [
+                [
+                    13681,
+                    4
+                ],
+                [
+                    3,
+                    55090
+                ]
+            ],
+            "confusion_matrix_path": "cm_best_binary_RandomForest.png"
+        },
+        "GradientBoosting": {
+            "accuracy": 0.9997673674721568,
+            "precision": 0.9998003593531644,
+            "recall": 0.9999092443686131,
+            "f1": 0.9998547988964717,
+            "roc_auc": 0.9998842432977497,
+            "confusion_matrix": [
+                [
+                    13674,
+                    11
+                ],
+                [
+                    5,
+                    55088
+                ]
+            ]
+        }
+    },
+    "multiclass_metrics": {},
+    "models_info": {
+        "LogisticRegression": {
+            "best_params": {
+                "C": 1.0,
+                "penalty": "l2",
+                "solver": "lbfgs"
+            },
+            "val_metrics": {
+                "accuracy": 0.9970193957370089,
+                "precision": 0.9965083040851033,
+                "recall": 0.9997821864846713,
+                "f1": 0.9981425607292035,
+                "roc_auc": 0.9989017447834795
+            }
+        },
+        "RandomForest": {
+            "best_params": {
+                "max_depth": null,
+                "min_samples_split": 2,
+                "n_estimators": 100
+            },
+            "val_metrics": {
+                "accuracy": 0.9999127628020588,
+                "precision": 0.9999455466211679,
+                "recall": 0.9999455466211679,
+                "f1": 0.9999455466211679,
+                "roc_auc": 0.9999998633857503
+            }
+        },
+        "GradientBoosting": {
+            "best_params": {
+                "learning_rate": 0.1,
+                "max_depth": 3,
+                "n_estimators": 100
+            },
+            "val_metrics": {
+                "accuracy": 0.9996801302742155,
+                "precision": 0.999709634684137,
+                "recall": 0.9998910932423357,
+                "f1": 0.9998003557297905,
+                "roc_auc": 0.9999584725839837
+            }
+        }
+    }
+}
